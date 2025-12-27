@@ -1,55 +1,13 @@
-# ====================
-# DATASETS (IGNORE)
-# ====================
-data/
-dataset/
-datasets/
-images/
-annotations/
-labels/
-*.bmp
-*.png
-*.jpg
-*.jpeg
+# Ignore all source code
+*.py
+*.ipynb
+src/
+main.py
+requirements.txt
 
-# ====================
-# OUTPUTS (IGNORE ALL)
-# ====================
-outputs/*
-results/*
-predictions/*
-runs/*
-
-# ✅ Allow ONLY accuracy report
-!outputs/accuracy_report.xlsx
-
-# ====================
-# CSV & TEMP FILES
-# ====================
-*.csv
-
-# ====================
-# MODEL FILES (IGNORE)
-# ====================
-*.pth
-*.pt
-*.h5
-
-# ====================
-# PYTHON CACHE
-# ====================
-__pycache__/
-*.pyc
-
-# ====================
-# ENVIRONMENT
-# ====================
-venv/
-env/
-
-# ====================
-# EDITOR / OS FILES
-# ====================
-.vscode/
-.idea/
-.DS_Store
+# Allow dataset & outputs
+!data/
+!dataset/
+!images/
+!annotations/
+!outputs/
