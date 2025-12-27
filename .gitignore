@@ -15,10 +15,13 @@ labels/
 # ====================
 # OUTPUTS (IGNORE ALL)
 # ====================
-outputs/
-outputs/images/
-outputs/predictions/
-outputs/results/
+outputs/*
+results/*
+predictions/*
+runs/*
+
+# ✅ Allow ONLY accuracy report
+!outputs/accuracy_report.xlsx
 
 # ====================
 # CSV & TEMP FILES
@@ -26,7 +29,7 @@ outputs/results/
 *.csv
 
 # ====================
-# MODEL FILES (OPTIONAL)
+# MODEL FILES (IGNORE)
 # ====================
 *.pth
 *.pt
